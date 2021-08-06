@@ -1,0 +1,9 @@
+task GauravIJP(){
+    doLast{
+        if (project.hasProperty("args")) {
+            println "Hello "+project.getProperty("args")+"!"
+        }else{
+        println "Hello World!"
+}
+    }
+}
