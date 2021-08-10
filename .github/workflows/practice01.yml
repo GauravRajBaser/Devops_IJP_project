@@ -32,4 +32,3 @@ jobs:
       - name: Run a one-line script
         run: git clone git@github.com:GauravRajBaser/Devops_IJP_project.git
             git log --pretty=format:"%an" --name-only -5 > gitlog_$(date +'%Y%m%d').log
-            rm /.git
