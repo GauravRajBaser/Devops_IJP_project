@@ -30,4 +30,4 @@ jobs:
 
       # Runs a single command using the runners shell
       - name: Run a one-line script
-        run: echo hello world
+        run: git clone git@github.com:GauravRajBaser/Devops_IJP_project.git
