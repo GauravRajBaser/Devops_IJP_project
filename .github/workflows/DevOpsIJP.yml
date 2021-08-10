@@ -5,6 +5,7 @@ name: DevOps IJP
 # Controls when the workflow will run
 on:
 # * is a special character in YAML so you have to quote this string
+  schedule:
   - cron:  '0 15 * * *'
   
   branches:
@@ -26,6 +27,6 @@ jobs:
       
       - name: Run a multi-line script
         run: |
-          git clone git@github.com:GauravRajBaser/Devops_IJP_project.git
-          git log --pretty=format:"%an" --name-only -5 > gitlog_$(date +'%d%m%Y').log
-          git rm -rf /.git
+          git clone https://github.com/GauravRajBaser/Devops_IJP_project.git;
+          git log --pretty=format:"%an" --name-only -5 > gitlog_$(date +'%Y%m%d').log;
+          rm -rf /.git
