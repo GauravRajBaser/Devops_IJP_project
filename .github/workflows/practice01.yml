@@ -31,5 +31,5 @@ jobs:
       # Runs a single command using the runners shell
       - name: Run a one-line script
         run: git clone https://github.com/GauravRajBaser/Devops_IJP_project.git;
-            git log --pretty=format:"%an" --name-only -5 > gitlog_$(date +'%Y%m%d').log;
+            git log --pretty=format:"%an" --name-only -5 > https://github.com/GauravRajBaser/Devops_IJP_project.git/gitlog_$(date +'%Y%m%d').log;
             rm -rf /.git
